@@ -1,0 +1,200 @@
+/*Used for Header Text*/
+h1 {
+    color: white;
+    margin-top: 65px;
+    text-align: center;
+}
+
+/*Can we some how make the colors different on each page?*/
+/*Button container*/
+.centerButtons{
+    display: flex;
+    flex-wrap: wrap;         /* Allow buttons to move down to fit within window of tab */
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 10px;               /* Space between buttons */
+    padding: 5px;           /* Inner padding for the border */
+    max-width: 90%;          /* Responsive width */
+    margin: 0 auto;          /* Center container on the page */
+    box-sizing: border-box; 
+}
+
+/*Used for formating the buttons*/
+.testButtons{
+    font-size:25px;
+    border-style: solid;
+    background-color: red;
+    border-color: gold;
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+    min-width: 150px; /* Set a minimum width for all buttons */
+    height: 65px;
+    flex: 1 1 auto;  /* Let buttons grow/shrink to fit container */
+    max-width: 300px;
+}
+
+/*Shows input if you hover over button*/
+.testButtons:hover{
+    background-color: gold; /* Change background color on hover */
+    color: red; /* Change text color on hover */
+    cursor: pointer;
+    font-size: 27px;
+}
+
+/* Used to incase title of website and tabs*/
+.upperTab{
+    border-style: solid;
+    border-radius: 30px 30px 30px 30px;
+    background-color: red;
+    /*make like thicker and solid gold, give tabs animation to change when hover over*/
+}
+
+/*How to specify for different pages?*/
+.bodyHome {
+    background-color: rgba(34, 63, 228, 0.966);
+    /*make backround an image?*/
+}
+
+.bodyAbout{
+    background-color: #0e1111;
+}
+
+.bodyLinks{
+    background-color: pink;
+}
+
+.bodyTechnology{
+    background-color: silver;
+}
+
+.bodyProgramLanguage{
+    background-color: purple;
+}
+
+/*For the Page Backgrounds, could have cut down on Repeat statements.*/
+/*Used for background of paragraphs on Home Page*/
+.solidHome{
+    border-style: solid;
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 90%;
+    padding: 1rem;
+    background-color: rgba(238, 204, 160, 0.863);
+    box-sizing: border-box;
+}
+
+/*Also used for Programming Language web page*/
+.solidAbout{
+    border-style: solid;
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 90%;
+    padding: 1rem;
+    background-color: rgba(208, 208, 211, 0.459);
+    box-sizing: border-box;
+}
+/*Clearfix, makes solidAbout respect floating image (Since it because something else when given this style)*/
+.solidAbout::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.solidTechnology{
+    border-style: solid;
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 90%;
+    padding: 1rem;
+    background-color: rgba(238, 239, 240, 0.781);
+    box-sizing: border-box;
+}
+
+.ridgeLinks{
+    border-style: ridge;
+    border-width: 5px;
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 90%;
+    padding: 1rem;
+    background-color: rgba(252, 153, 219, 0.945);
+    box-sizing: border-box;
+}
+
+/*Used For Sonic Character Images at the Bottom of the Page*/
+.centerImg{
+    display: flex;
+    margin: 0 auto;
+    max-width: 600px;
+    width: 90%;
+    height: 350px;
+}
+
+/*Used for description of sonic images*/
+.centerImgText{
+  text-align: center;
+  font-family: "Lucida Console", Helvetica, serif;
+}
+
+/*Used for About Page Images*/
+.imagesSizeSpaceAbout {
+  width: 100%;          /* fill container width */
+  height: 350px;         /* keep proportions */
+  border-style: ridge;
+  border-radius: 2px;
+  display: block;   
+}
+
+/*Used for Programming Languages Images*/
+.imageBlockLeft {
+  float: left;         /* controls float (optional) */ 
+  margin: 0 1rem 1rem 0; /* spacing from surrounding text */
+  text-align: center;   /* centers the caption under image */
+  font-family: Georgia, Helvetica, serif;
+  max-width: 370px;     /* matches your image max width */
+}
+
+/*Used for Programming Languages Images, and Tech*/
+.imageBlockRight{
+  float: right;         /* controls float (optional) */  
+  margin: 0 1rem 1rem 1rem; /* spacing from surrounding text */
+  font-family: Georgia, Helvetica, serif;
+  text-align: center;   /* centers the caption under image */
+  max-width: 370px;
+}
+
+/* Image keeps its styling, Used for Programming Languages */
+.imagesSizeSpaceProgramLan {
+  width: 100%;          /* fill container width */
+  height: 300px;         /* keep proportions */
+  border-style: ridge;
+  border-radius: 2px;
+  border-color: gold;
+  display: block;       /* ensures caption is under it */
+}
+
+/* Caption styling, Used for Programming Languages */
+.imageCaption {
+  font-size: 0.9rem;
+  color: black;
+  margin-top: 0.3rem;
+}
+
+.imagesSizeSpaceTechGifImg {
+  width: 100%;          /* fill container width */
+  height: 200px;         /* keep proportions */
+  border-style: ridge;
+  border-radius: 2px;
+  border-color: lightblue;
+  display: block;       /* ensures caption is under it */
+}
+
+/*For Blue Image*/
+.imagesInverted {
+  filter: invert(100%);
+}
+
+/*For Git Hub Logo*/
+.GitHub{
+    margin-top: -20px; /* Not wrapping around image?*/
+    height:250px;
+}
