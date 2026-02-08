@@ -126,7 +126,7 @@ h1 {
     margin: 0 auto;
     max-width: 600px;
     width: 90%;
-    height: 350px;
+    <!--height: 350px;-->
 }
 
 /*Used for description of sonic images*/
@@ -197,4 +197,5 @@ h1 {
 .GitHub{
     margin-top: -20px; /* Not wrapping around image?*/
     height:250px;
+
 }
